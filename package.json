@@ -21,7 +21,7 @@
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.5.0",
     "svelte-loader": "^2.13.6",
-    "webpack": "^5.4.0",
+    "webpack": "^4.44.2",
     "webpack-dev-server": "^3.11.0"
   }
 }

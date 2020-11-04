@@ -23,7 +23,7 @@ module.exports = {
                 test: /\.svelte?$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'svelte-loader'
+                    loader: 'svelte-loader-hot'
                 }
             }
         ]
