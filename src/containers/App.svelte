@@ -30,6 +30,9 @@
     margin: 0;
     padding: 0;
   }
+  :global(img) {
+    object-fit: cover;
+  }
 </style>
 
 <Header />

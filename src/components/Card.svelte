@@ -38,6 +38,12 @@
     background-color: white;
     margin: 0 0 2em 0;
   }
+  .Card-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
   .Card-user {
     display: flex;
     align-items: center;
@@ -104,13 +110,13 @@
     font-size: 14px;
   }
   .active-like {
-    color: #bc1820;
+    color: #bc1888;
     animation: bounce linear 0.8s;
     animation-iteration-count: 1;
     transform-origin: 20% 20%;
   }
   .active-bookmark {
-    color: #c27522;
+    color: #f09433;
   }
 
   @keyframes bounce {
@@ -148,37 +154,37 @@
   {/if}
 
   <div class="Card-container">
-    <div class="Card-header">
+    <div class="Card-Header">
       <div class="Card-user">
         <img src={avatar} alt={username} />
         <h2>{username}<span>{location}</span></h2>
       </div>
       <div class="Card-settings"><i class="fas fa-ellipsis-h" /></div>
-      <div class="Card-photo">
-        <figure on:dblclick={handleLike}>
-          <img src={photo} alt={username} />
-        </figure>
-      </div>
-      <div class="Card-icons">
-        <div class="Card-icons-first">
-          <i
-            class="fas fa-heart"
-            on:click={handleLike}
-            class:active-like={like} />
-          <i class="fas fa-paper-plane" on:click={handleClick} />
-        </div>
-        <div class="Card-icons-second">
-          <i
-            class="fas fa-bookmark"
-            class:active-bookmark={bookmark}
-            on:click={() => (bookmark = !bookmark)} />
-        </div>
-      </div>
-      <div class="Card-description">
-        <h3>{username}</h3>
-        <span>{postComment}</span>
-      </div>
-      <Comments {comments} />
     </div>
+    <div class="Card-photo">
+      <figure on:dblclick={handleLike}>
+        <img src={photo} alt={username} />
+      </figure>
+    </div>
+    <div class="Card-icons">
+      <div class="Card-icons-first">
+        <i
+          class="fas fa-heart"
+          on:click={handleLike}
+          class:active-like={like} />
+        <i class="fas fa-paper-plane" on:click={handleClick} />
+      </div>
+      <div class="Card-icons-second">
+        <i
+          class="fas fa-bookmark"
+          class:active-bookmark={bookmark}
+          on:click={() => (bookmark = !bookmark)} />
+      </div>
+    </div>
+    <div class="Card-description">
+      <h3>{username}</h3>
+      <span>{postComment}</span>
+    </div>
+    <Comments {comments} />
   </div>
 </div>

@@ -66,15 +66,15 @@
     <div class="Stories-items">
       <div class="Stories-item">
         <div class="Stories-item-box">
-          <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="" />
+          <img src="https://i.imgur.com/uAoaDQ7.png" alt="" />
         </div>
-        <h2>juano1204 <span>10 hours before</span></h2>
+        <h2>juano1204 <span>7 minutes ago</span></h2>
       </div>
       <div class="Stories-item">
         <div class="Stories-item-box">
-          <img src="https://arepa.s3.amazonaws.com/elmo002.jpg" alt="" />
+          <img src="https://i.imgur.com/uAoaDQ7.png" alt="" />
         </div>
-        <h2>juano1204 <span>10 hours before</span></h2>
+        <h2>juano1204 <span>10 minutes ago</span></h2>
       </div>
     </div>
   </div>
