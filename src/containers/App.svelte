@@ -12,6 +12,7 @@
   onMount(async () => {
     const response = await fetch(API);
     data = await response.json();
+    console.log(data);
   });
 </script>
 
@@ -33,6 +34,6 @@
 
 <Header />
 <Main>
-  <TimeLine post={data.posts} />
+  <TimeLine posts={data.posts} />
   <Sidebar {...data.user} />
 </Main>
