@@ -1,5 +1,4 @@
 <script>
-  import App from "../containers/App.svelte";
   import Card from "./Card.svelte";
 
   export let posts = [];

@@ -4,24 +4,24 @@
   "description": "This is pugstagram.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "dev": "sapper dev",
+    "build": "sapper build",
+    "export": "sapper export",
+    "start": "node __sapper__/build"
   },
   "author": "juan pablo celiz",
   "license": "MIT",
   "dependencies": {
-    "svelte": "^3.29.4",
+    "compression": "^1.7.4",
+    "polka": "^0.5.2",
+    "sirv": "^1.0.7",
     "svelte-loader-hot": "^0.3.1",
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.12.1",
-    "babel-loader": "^8.1.0",
-    "html-webpack-plugin": "^4.5.0",
+    "sapper": "^0.28.10",
+    "svelte": "^3.29.4",
     "svelte-loader": "^2.13.6",
-    "webpack": "^4.44.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack": "^4.44.2"
   }
 }
